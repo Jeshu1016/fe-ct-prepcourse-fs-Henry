@@ -97,6 +97,8 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
    // Tu código:
+   if (num % 1 === 0 ) return true;
+   else return false;
 }
 
 function fizzBuzz(num) {
@@ -105,6 +107,12 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
+   // ver el ordenamiento de prioridad del IF para que tome tadas las posibilidades que tomamos
+
+   if (num % 3 === 0 && num % 5 ===0) return "fizzbuzz";
+   else if (num % 3 === 0) return "fizz";
+   else if (num % 5 ===0) return "buzz";
+   else return false;
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -115,6 +123,7 @@ function operadoresLogicos(num1, num2, num3) {
    // Si todos los argumentos son cero, retornar ---> "Error".
    // Si no se cumple ninguna de las condiciones anteriores, retornar false.
    // Tu código:
+   
 }
 
 function esPrimo(num) {
